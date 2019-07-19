@@ -1,0 +1,12 @@
+/*
+    === SCSS Mixins ===
+*/ 
+
+// Flex center
+@mixin flex-center($d:row, $w:wrap) {
+    display: flex;
+    flex-direction: $d;
+    flex-wrap: $w;
+    justify-content: center;
+    align-items: center;
+}

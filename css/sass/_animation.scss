@@ -1,0 +1,49 @@
+/*
+    === SCSS Animation ===
+*/
+
+// Positive words
+@keyframes positive {
+    0% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+    
+    5% {
+      opacity: 1;
+      transform: translateY(0); // default value is 0
+    }
+    
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    25% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+    
+    80% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+}
+
+// Greeting message fade in
+@keyframes greeting {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    80% {
+        opacity: 0.5;
+        transform: scale(1.2)
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

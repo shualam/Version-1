@@ -1,0 +1,30 @@
+/*
+    === Media Query ===
+*/
+
+// Navigation
+@media screen and (max-width: 768px) {
+    .nav {
+        height: auto !important;
+
+        .nav__navbar {
+
+            .nav__brand {
+                .nav__logo {
+                    img {
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .nav__menu {
+                .nav__link {
+                    font-size: 1.2rem;
+                    .nav__link--title {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

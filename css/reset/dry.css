@@ -1,0 +1,35 @@
+/* DONOT REPEAT YOURSELF */
+
+/* Initialize HTML & Universal selector
+    1. Box sizing property to all elements
+    2. Scroll behavior
+*/
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* HTML & Body element
+    1. Position
+    2. Font declaration
+*/
+
+html, body {
+    position: relative;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Anchor tag 
+    1. Remove underline
+*/
+
+a {
+    text-decoration: none;
+}

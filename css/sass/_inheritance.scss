@@ -1,0 +1,44 @@
+/*
+    === SCSS Inheritance Classes ===
+*/ 
+
+// Fluid container
+.container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+}
+
+// Content width 80%
+.content {
+    width: 80%;
+    height: inherit;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+// Media query
+@media screen and (max-width: 768px) {
+    .content {
+        width: 100%;
+    }
+}
+
+// Buttons
+%button {
+    display: inline-block;
+    background-color: $blue-bg;
+    padding: 1rem 1.95rem;
+    color: $white-text;
+    transition: 0.3s ease-in-out 0s;
+}
+.button {
+    @extend %button;
+}
+
+.button:active, .button:focus {
+    background-color: transparent;
+    outline: 1px dashed $blue-bg;
+    color: $black-text;
+}
